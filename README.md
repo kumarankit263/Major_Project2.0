@@ -1,9 +1,9 @@
-**# CropConnect - Empowering Farmers and Consumers**
+**# KrishiBazaar - Empowering Farmers and Consumers**
 
 ## **Features**
 
 ### **Dual Interfaces**  
-CropConnect provides separate interfaces for consumers and sellers. Users can **Sign Up** and **Sign In** with **email verification** to secure their accounts.
+KrishiBazaar provides separate interfaces for consumers and sellers. Users can **Sign Up** and **Sign In** with **email verification** to secure their accounts.
 
 ---
 
