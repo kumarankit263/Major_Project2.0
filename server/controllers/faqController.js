@@ -1,51 +1,5 @@
 const FAQ = require("../models/faqSchema");
 const Product = require("../models/productSchema"); // Import the Product model
-// Add FAQ
-// const addFAQ = async (req, res) => {
-//   try {
-//     console.log("Received request to add FAQ");
-//     console.log("Params:", req.params);
-//     console.log("Body:", req.body);
-//     console.log("User ID from token:", req.userId);
-
-//     req.body.userId = req.userId;
-//     req.body.productId = req.params.productId;
-
-//     // 🔹 Fetch the product to get the sellerId
-//     const product = await Product.findById(req.body.productId);
-    
-//     if (!product) {
-//       return res.status(404).json({ message: "Product not found" });
-//     }
-
-//     req.body.sellerId = product.sellerId; // Assign the sellerId from product
-
-//     let data = new FAQ(req.body);
-//     let result = await data.save();
-//     console.log("FAQ Saved:", result);
-
-//     res.status(200).send({
-//       message:
-//         "After the seller answers your question, we will send you an email to inform you.",
-//     });
-//   } catch (error) {
-//     console.log("Error:", error);
-
-//     if (
-//       error.code === 11000 &&
-//       error.keyPattern &&
-//       error.keyPattern.userId &&
-//       error.keyPattern.productId
-//     ) {
-//       res.status(400).send({
-//         message: "You have already submitted a question for this product.",
-//       });
-//     } else {
-//       res.status(500).send({ message: "Something went wrong!" });
-//     }
-//   }
-// };
-
 
 const addFAQ = async (req, res) => {
   try {
