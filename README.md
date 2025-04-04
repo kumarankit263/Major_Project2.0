@@ -62,8 +62,9 @@ cd CropConnect
 1. Navigate to the `client` folder.
 2. Create a `.env` file in the root directory and add:
 ```env
-VITE_CROPCONNECT_API = "https://cropconnect-backend.vercel.app/"  
-# Replace with `http://localhost:8080/` for local backend
+VITE_CROPCONNECT_API = http://localhost:8080/
+RAZORPAY_KEY_ID = {your razorpay key id}
+RAZORPAY_KEY_SECRET = {your razorpay key secret}
 ```
 3. Install dependencies and run the frontend:
 ```sh
