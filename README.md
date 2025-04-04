@@ -35,17 +35,33 @@ KrishiBazaar provides separate interfaces for consumers and sellers. Users can *
 ---
 
 ## **Technologies Used**
-- **MongoDB** (Database)
-- **NodeJS & ExpressJS** (Backend)
-- **ReactJS & Redux** (Frontend)
-- **Tailwind CSS** (Styling)
-- **WebSocket (Socket.io)** (Real-time updates)
-- **Cloudinary** (Image storage)
-- **Leaflet** (Map integration)
-- **Unsplash** (Product images)
-- **Recharts** (Graphs & Data Visualization)
-- **Gemini AI** (Crop prediction AI)
-- **Razorpay** (Payment processing - upcoming)
+MongoDB – Database
+
+Node.js & Express.js – Backend server and RESTful APIs
+
+React.js & Redux – Frontend UI and state management
+
+Tailwind CSS – Responsive and utility-first CSS framework
+
+Socket.io (WebSocket) – Real-time updates (chat, notifications, etc.)
+
+Cloudinary – Image storage and management
+
+Leaflet.js – Interactive map integration
+
+Unsplash API – Product image sourcing
+
+Recharts – Data visualization and graphs
+
+Gemini AI – Crop prediction using natural language processing
+
+Custom Machine Learning Models:
+
+Fertilizer Recommendation Model – Recommends suitable fertilizers based on crop and soil data
+
+Yield Prediction Model – Predicts crop yield using environmental and agricultural parameters
+
+Razorpay  – Payment gateway integration for transactions
 
 ---
 
