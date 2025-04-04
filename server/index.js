@@ -66,9 +66,16 @@ app.post("/api/yield-prediction", async (req, res) => {
   }
 });
 
-app.post("/api/fertilzer-prediction",async(req,res)=>{
+app.post("/predict",async(req,res)=>{
   try{
-    const response = await axios.post("https://yield-prediction-f3dg.onrender.com/predict", req.body);
+    const {temp,humi,mois,soil,crop,nitro,pota,phosp}=req.body;
+    if (!temp || !humi || !mois || !soil || !crop || !nitro || !pota || !phosp) {
+      return res.status(400).json({ error: "All fields are required!" });
+        }
+
+    const response = await axios.post("https://fertilizer-prediction-1myh.onrender.com/predict",{
+      temp,humi,mois,soil,crop,nitro,pota,phosp
+    });
     console.log("Prediction Response:", response.data);
     res.json(response.data);
   }

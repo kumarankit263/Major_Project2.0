@@ -63,7 +63,7 @@ const YieldPrediction = () => {
                     ))}
                 </select>
                 <input type="text" name="crop" placeholder="Crop" onChange={handleChange} required className="w-full p-2 border rounded" />
-                <input type="number" name="area" placeholder="Area (in hectares)" step="0.01" onChange={handleChange} required className="w-full p-2 border rounded" />
+                <input type="number" name="area" placeholder="Area (in sq.feet)" step="0.01" onChange={handleChange} required className="w-full p-2 border rounded" />
                 <button type="submit" className="w-full bg-green-500 text-white py-2 rounded hover:bg-green-600 transition">
                     Predict
                 </button>
