@@ -79,11 +79,16 @@ npm run dev
 MONGO_DB_URL = {your mongodb url}
 GEMINI_API_KEY = {your gemini api key}
 GMAIL_ID = {your gmail id}
+GMAIL = {your gmail id}
 APP_PASSWORD = {your google account app password}
 JWT_SECRET = {your jwt secret}
 CLOUDINARY_CLOUD_NAME = {cloudinary cloud name}
 CLOUDINARY_API_KEY = {cloudinary api key}
 CLOUDINARY_API_SECRET = {cloudinary api secret}
+STRIPE_SECRET_KEY = {your stripe secret key}
+RAZORPAY_KEY_ID = {your razorpay key id}
+RAZORPAY_KEY_SECRET = {your razorpay key secret}
+
 ```
 3. Install dependencies and run the backend:
 ```sh
