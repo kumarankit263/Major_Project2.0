@@ -6,7 +6,7 @@ const sendMail = async (receiverEmailAddress, content, subject) => {
     port: 465, // Use 587 if you prefer TLS
     secure: true,
     auth: {
-      user: "kingabhaysharma@gmail.com", // Replace with your actual email
+      user: "@gmail.com", // Replace with your actual email
       pass: process.env.APP_PASSWORD, // Ensure this is correctly set
     },
   };
@@ -14,7 +14,7 @@ const sendMail = async (receiverEmailAddress, content, subject) => {
   let transporter = nodemailer.createTransport(config);
 
   let message = {
-    from: "kingabhaysharma@gmail.com", // Match sender email with authenticated email
+    from: "@gmail.com", // Match sender email with authenticated email
     to: receiverEmailAddress,
     subject: subject,
     html: content,
